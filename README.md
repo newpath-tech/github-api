@@ -1,15 +1,24 @@
 <div align="center">
 
-# 🪐 GITHUB TELEMETRY API
+<!-- High-Tech Animated Typing Header -->
+<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=700&size=32&pause=1000&color=00F0FF&center=true&vCenter=true&width=800&lines=GITHUB+TELEMETRY+API;From+Zero+to+Production;GraphQL+Powered+Data+Extraction;Built+for+Scale+on+Vercel" alt="Typing SVG" />
 
-**Next-Generation Serverless Backend for Real-Time Developer Metrics**
+<br>
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Python 3.10+](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)](https://graphql.org/)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+<!-- Premium Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+</p>
 
-*High-performance, asynchronous GitHub data extraction built for scale.*
+<!-- Live View Counter -->
+<p align="center">
+  <img src="https://hits.sh/github.com/YOUR_GITHUB_USERNAME/github-api.svg?style=for-the-badge&label=Views&color=00F0FF" alt="Hits">
+</p>
+
+*High-performance, asynchronous GitHub data extraction microservice built for scale.*
 
 ---
 
@@ -17,42 +26,24 @@
 
 ## 🚀 Overview
 
-The **GitHub Telemetry API** is a high-speed, serverless backend designed to fetch, analyze, and validate GitHub repository metrics for large batches of students. By leveraging **GitHub's GraphQL API** and **FastAPI's asynchronous engine**, this microservice bypasses standard REST limitations, executing complex queries in milliseconds. 
-
-Engineered specifically for **Vercel Serverless deployment**, it utilizes Personal Access Tokens to guarantee a 5,000 request/hour rate limit, ensuring absolute stability in production environments.
-
-## ✨ Core Features
-
-- ⚡ **Asynchronous Core:** Powered by `httpx` and `asyncio` for non-blocking network requests.
-- 🌌 **GraphQL Precision:** Single-query data fetching reduces payload size and eliminates waterfall requests.
-- 🧠 **Intelligent Validation Algorithm:** Automatically filters out "noise" (empty repos, forks, boilerplate) by analyzing root directory structures and ignoring default files (`README.md`, `.gitignore`, `LICENSE`).
-- ☁️ **Edge-Ready Architecture:** Pre-configured `vercel.json` for seamless, zero-config serverless deployment.
-- 🛡️ **CORS Secured:** Fully customizable middleware for secure cross-origin resource sharing.
+The **GitHub Telemetry API** is a high-speed, serverless backend designed to fetch, analyze, and validate GitHub repository metrics for developers and student cohorts. By leveraging **GitHub's GraphQL API** and **FastAPI's asynchronous engine**, this service bypasses standard REST limitations, executing complex telemetry queries in milliseconds.
 
 ---
 
-## 📡 API Reference
+## ⚡ Zero to Ignite: Local Setup Guide
 
-### 1. Retrieve Single User Telemetry
-Fetch validated metrics and repository details for a single developer.
+Follow these exact step-by-step commands to set up the project from complete scratch on your local machine and ignite the dev server.
 
-- **Endpoint:** `GET /{username}`
-- **Response Time:** `~400ms`
+### 0️⃣ Prerequisites
+- **Python 3.10 or higher** installed.
+- **Git** installed.
+- A **GitHub Personal Access Token (Classic)** with `read:user` and `public_repo` scopes.
 
-**Example Response:**
-```json
-{
-  "github_username": "yukith1411",
-  "github": {
-    "total_repos_count": 12,
-    "valid_projects_count": 8,
-    "repos": [
-      {
-        "name": "neural-network-visualizer",
-        "stars": 42,
-        "language": "Python",
-        "root_files_count": 5
-      }
-    ]
-  }
-}
+---
+
+### 1️⃣ Clone or Navigate to Project
+Open your terminal or PowerShell and prepare your repository directory:
+
+```bash
+git clone [https://github.com/YOUR_GITHUB_USERNAME/github-api.git](https://github.com/YOUR_GITHUB_USERNAME/github-api.git)
+cd github-api
